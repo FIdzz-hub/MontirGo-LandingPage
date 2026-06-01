@@ -1,4 +1,4 @@
-// import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -9,9 +9,9 @@ export default function Footer() {
           <p className="text-sm text-slate-500 mt-1">© {new Date().getFullYear()} MontirGo. All rights reserved.</p>
         </div>
         <div className="flex gap-6 text-sm">
-          <a href="#hero" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#services" className="hover:text-white transition-colors">Terms of Service</a>
-          <a href="#features" className="hover:text-white transition-colors">Contact Us</a>
+          <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+          <Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link>
         </div>
       </div>
     </footer>

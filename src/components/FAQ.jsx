@@ -29,10 +29,21 @@ export default function FAQ() {
   return (
     <section className="py-20 bg-white" id="faq">
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-slate-900 text-center mb-4">
+
+        <h2
+          className="text-4xl font-bold text-slate-900 text-center mb-4"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           Pertanyaan Umum
         </h2>
-        <p className="text-slate-500 text-center mb-12 text-lg">
+
+        <p
+          className="text-slate-500 text-center mb-12 text-lg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="100"
+        >
           Ada pertanyaan? Kami siap menjawab.
         </p>
 
@@ -41,6 +52,9 @@ export default function FAQ() {
             <div
               key={index}
               className="border border-slate-200 rounded-2xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay={index * 80}
             >
               <button
                 className="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-slate-50 transition-colors"
@@ -59,6 +73,7 @@ export default function FAQ() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
