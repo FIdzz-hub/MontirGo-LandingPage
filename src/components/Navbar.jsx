@@ -14,6 +14,7 @@ export default function Navbar() {
           <a href="#hero" className="hover:text-[#4D77FF] transition-colors">Home</a>
           <a href="#services" className="hover:text-[#4D77FF] transition-colors">Layanan</a>
           <a href="#features" className="hover:text-[#4D77FF] transition-colors">Keunggulan</a>
+          <a href="#coverage" className="hover:text-[#4D77FF] transition-colors">Kota</a>
         </div>
 
         {/* CTA Button */}

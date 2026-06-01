@@ -1,5 +1,3 @@
-// import React from 'react';
-
 const servicesData = [
   {
     title: 'TUNE-UP',
@@ -27,7 +25,13 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+
+        {/* Heading */}
+        <div
+          className="text-center max-w-2xl mx-auto mb-16"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Layanan Utama Kami</h2>
           <p className="text-slate-600">Nikmati kemudahan merawat kendaraan dengan opsi layanan home service terlengkap dari MontirGo.</p>
         </div>
@@ -35,7 +39,13 @@ export default function Services() {
         {/* Grid Card List */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service, index) => (
-            <div key={index} className="group bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col h-full">
+            <div
+              key={index}
+              className="group bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col h-full"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay={index * 120}
+            >
               <div className="h-48 overflow-hidden relative">
                 <img 
                   src={service.img} 
@@ -53,6 +63,7 @@ export default function Services() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
