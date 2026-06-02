@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <section className="py-24 bg-white min-h-screen">
       <div className="max-w-3xl mx-auto px-6">
-        <Link to="/hero" className="inline-flex items-center gap-2 text-[#4D77FF] font-semibold mb-8 hover:underline">
+        <Link to="/" className="inline-flex items-center gap-2 text-[#4D77FF] font-semibold mb-8 hover:underline">
           ← Back to Home
         </Link>
         <h1 className="text-4xl font-bold text-slate-900 mb-2">Privacy Policy</h1>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MailboxIcon, WhatsappLogoIcon, BuildingOfficeIcon } from "@phosphor-icons/react";
 
 export default function ContactUs() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -75,17 +76,17 @@ export default function ContactUs() {
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
           <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-            <div className="text-2xl mb-2">📧</div>
+            <div className="text-2xl mb-2 flex justify-center"><MailboxIcon size={32}/></div>
             <p className="text-sm font-semibold text-slate-700">Email</p>
             <p className="text-xs text-slate-500 mt-1">support@montirgo.id</p>
           </div>
           <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-            <div className="text-2xl mb-2">📱</div>
+            <div className="text-2xl mb-2 flex justify-center"><WhatsappLogoIcon size={32}/></div>
             <p className="text-sm font-semibold text-slate-700">WhatsApp</p>
             <p className="text-xs text-slate-500 mt-1">+62 812-3456-7890</p>
           </div>
           <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
-            <div className="text-2xl mb-2">📍</div>
+            <div className="text-2xl mb-2 flex justify-center"><BuildingOfficeIcon size={32}/></div>
             <p className="text-sm font-semibold text-slate-700">Kantor</p>
             <p className="text-xs text-slate-500 mt-1">Bandung, Jawa Barat</p>
           </div>

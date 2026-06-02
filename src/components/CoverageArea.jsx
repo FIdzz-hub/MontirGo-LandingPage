@@ -1,4 +1,9 @@
-import React from 'react';
+// import React from 'react';
+import fotoSyafiq from '../assets/Syafiq.jpg'
+import fotoYogi from '../assets/Yogi.jpg'
+import fotoHafidz from '../assets/Hafidz.jpg'
+import fotoRaihan from '../assets/Raihan.jpeg'
+import fotoIffat from '../assets/iffat.jpg'
 
 const teamMembers = [
   {
@@ -7,15 +12,15 @@ const teamMembers = [
     handle: "FacebookUser",
     socialIcon: "F", 
     iconBg: "bg-black",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop"
+    image: fotoRaihan
   },
   {
     name: "Yogi Permana Jati",
     role: "Frontend Developer",
     handle: "TwitterUser",
-    socialIcon: "T",
+    socialIcon: "X",
     iconBg: "bg-black",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500&auto=format&fit=crop"
+    image: fotoYogi
   },
   {
     name: "Hafidz Shabanan Fadhil",
@@ -23,7 +28,7 @@ const teamMembers = [
     handle: "LinkedInUser",
     socialIcon: "In",
     iconBg: "bg-blue-600",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=500&auto=format&fit=crop"
+    image: fotoHafidz
   },
   {
     name: "Iffat zarqa ",
@@ -31,27 +36,27 @@ const teamMembers = [
     handle: "TwitterXUser",
     socialIcon: "X",
     iconBg: "bg-black",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=500&auto=format&fit=crop"
+    image: fotoIffat
   },
   {
     name: "Syafiq Tristan",
-    role: "Art Director",
+    role: "UI/UX Designer",
     handle: "InstagramUser",
     socialIcon: "Ig",
     iconBg: "bg-pink-600",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500&auto=format&fit=crop"
+    image: fotoSyafiq
   }
 ];
 
 export default function CoverageArea() {
   return (
-    <section className="py-24 bg-white" id="team">
+    <section className="py-24 bg-white" id="Teams">
       <div className="max-w-[1400px] mx-auto px-6"> {/* Lebar kontainer ditambah agar 5 foto muat */}
         
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-slate-900 mb-6">Our Team</h2>
           <p className="text-slate-500 max-w-3xl mx-auto text-sm leading-relaxed uppercase tracking-widest">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Sekumpulan mahasiswa yang kerja sama buat kelarin task. Tenang, kami semua crewmate sejati, nggak ada impostor di sini!
           </p>
         </div>
 

@@ -2,7 +2,7 @@ const servicesData = [
   {
     title: 'TUNE-UP',
     desc: 'Pengembalian performa mesin agar kembali optimal, bertenaga, dan efisien.',
-    img: 'https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=500&auto=format&fit=crop'
+    img: 'https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?q=80&w=500&auto=format&fit=crop'
   },
   {
     title: 'CAR DIAGNOSTIC',
@@ -17,7 +17,7 @@ const servicesData = [
   {
     title: 'OIL SERVICE',
     desc: 'Penggantian oli mesin dan filter kualitas premium sesuai spesifikasi standar pabrikan.',
-    img: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=500&auto=format&fit=crop'
+    img: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=500&auto=format&fit=crop'
   }
 ];
 

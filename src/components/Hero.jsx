@@ -1,4 +1,24 @@
 export default function Hero() {
+
+  const handleDownload = () => {
+  const yakinDownload = window.confirm(
+    "Apakah Anda yakin ingin mengunduh aplikasi MontirGo (.apk)?"
+  );
+
+  if (yakinDownload) {
+    const apkFileName = "app-release.apk"; 
+
+    const link = document.createElement('a');
+    
+    link.href = `/${apkFileName}`; 
+    link.download = apkFileName;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+};
+
   return (
     <section id="hero" className="pt-32 pb-20 bg-gradient-to-b from-blue-50/50 via-white to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -35,9 +55,34 @@ export default function Hero() {
             data-aos-duration="700"
             data-aos-delay="300"
           >
-            <span className="text-xs text-left block">
-              Download on the <strong className="block text-sm text-white">App Store / Google Play</strong>
-            </span>
+            {/* <span className="text-xs text-left block">
+              Download Now<strong className="block text-sm text-white">App Store / Google Play</strong>
+            </span> */}
+            {/* <button
+              onClick={handleDownload}
+              className="bg-slate-900 hover:bg-slate-800 text-white p-3 rounded-xl flex items-center gap-3 transition-all duration-200 active:scale-95 shadow-md"
+            >
+              <span className="text-xs text-left block">
+                Download Now
+                <strong className="block text-sm text-white">App Store / Google Play</strong>
+              </span>
+            </button> */}
+            <button
+              onClick={handleDownload}
+              className="bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-xl flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md tracking-wide cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              <span>Download Now</span>
+            </button>
           </a>
         </div>
         <div

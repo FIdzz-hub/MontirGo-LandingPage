@@ -24,7 +24,7 @@ export default function Navbar() {
           <button onClick={() => scrollTo('hero')} className="hover:text-[#4D77FF] transition-colors">Home</button>
           <button onClick={() => scrollTo('services')} className="hover:text-[#4D77FF] transition-colors">Layanan</button>
           <button onClick={() => scrollTo('features')} className="hover:text-[#4D77FF] transition-colors">Keunggulan</button>
-          <button onClick={() => scrollTo('coverage')} className="hover:text-[#4D77FF] transition-colors">Team</button>
+          <button onClick={() => scrollTo('Teams')} className="hover:text-[#4D77FF] transition-colors">Team</button>
         </div>
 
         {/* GANTI BAGIAN INI */}
