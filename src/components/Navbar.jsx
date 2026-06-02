@@ -24,17 +24,20 @@ export default function Navbar() {
           <button onClick={() => scrollTo('hero')} className="hover:text-[#4D77FF] transition-colors">Home</button>
           <button onClick={() => scrollTo('services')} className="hover:text-[#4D77FF] transition-colors">Layanan</button>
           <button onClick={() => scrollTo('features')} className="hover:text-[#4D77FF] transition-colors">Keunggulan</button>
-          <button onClick={() => scrollTo('coverage')} className="hover:text-[#4D77FF] transition-colors">Kota</button>
+          <button onClick={() => scrollTo('coverage')} className="hover:text-[#4D77FF] transition-colors">Team</button>
         </div>
 
-        <div>
-          <button
-            onClick={() => scrollTo('download')}
-            className="bg-[#4D77FF] hover:bg-[#3b62e3] text-white px-6 py-2.5 rounded-full font-semibold shadow-md shadow-blue-200 transition-all transform hover:-translate-y-0.5"
-          >
-            Download Aplikasi
-          </button>
-        </div>
+        {/* GANTI BAGIAN INI */}
+<div>
+  <a
+    href="https://drive.google.com/file/d/1hA4jIv_AI7jQxjGHEbskSTRlunX-l5hk/view?usp=sharing" // Ganti dengan link download kamu
+    target="_blank" // Agar membuka tab baru
+    rel="noopener noreferrer" // Keamanan tambahan saat buka tab baru
+    className="bg-[#4D77FF] hover:bg-[#3b62e3] text-white px-6 py-2.5 rounded-full font-semibold shadow-md shadow-blue-200 transition-all inline-block transform hover:-translate-y-0.5"
+  >
+    Download Aplikasi
+  </a>
+</div>
 
       </div>
     </nav>
