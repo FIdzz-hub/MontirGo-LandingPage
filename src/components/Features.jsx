@@ -37,7 +37,7 @@ export default function Features() {
             <p className="text-blue-100 leading-relaxed">
               Dapatkan akses ke puluhan orderan perawatan otomotif setiap harinya langsung ke genggaman Anda. Gabung sebagai mekanik profesional MontirGo sekarang!
             </p>
-            <button className="bg-white text-[#4D77FF] font-bold px-6 py-3 rounded-xl shadow-md hover:bg-blue-50 transition-colors">
+            <button className="bg-white text-[#4D77FF] font-bold px-6 py-3 rounded-xl shadow-md hover:bg-blue-50 transition-colors cursor-pointer">
               Daftar Jadi Montir
             </button>
           </div>

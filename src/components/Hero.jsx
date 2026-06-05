@@ -1,23 +1,17 @@
 export default function Hero() {
 
   const handleDownload = () => {
-  const yakinDownload = window.confirm(
-    "Apakah Anda yakin ingin mengunduh aplikasi MontirGo (.apk)?"
-  );
+      const apkFileName = "app-release.apk";
 
-  if (yakinDownload) {
-    const apkFileName = "app-release.apk"; 
+      const link = document.createElement('a');
 
-    const link = document.createElement('a');
-    
-    link.href = `/${apkFileName}`; 
-    link.download = apkFileName;
+      link.href = `/${apkFileName}`;
+      link.download = apkFileName;
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-};
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  };
 
   return (
     <section id="hero" className="pt-32 pb-20 bg-gradient-to-b from-blue-50/50 via-white to-white overflow-hidden">
@@ -47,26 +41,13 @@ export default function Hero() {
             Montir profesional siap datang langsung ke lokasi Anda untuk melakukan maintenance, tune-up, hingga ganti oli secara transparan dan bergaransi.
           </p>
           <a
-            href="https://drive.google.com/file/d/1hA4jIv_AI7jQxjGHEbskSTRlunX-l5hk/view?usp=sharing"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-xl hover:bg-slate-800 transition-all shadow-lg"
             data-aos="fade-up"
             data-aos-duration="700"
             data-aos-delay="300"
           >
-            {/* <span className="text-xs text-left block">
-              Download Now<strong className="block text-sm text-white">App Store / Google Play</strong>
-            </span> */}
-            {/* <button
-              onClick={handleDownload}
-              className="bg-slate-900 hover:bg-slate-800 text-white p-3 rounded-xl flex items-center gap-3 transition-all duration-200 active:scale-95 shadow-md"
-            >
-              <span className="text-xs text-left block">
-                Download Now
-                <strong className="block text-sm text-white">App Store / Google Play</strong>
-              </span>
-            </button> */}
             <button
               onClick={handleDownload}
               className="bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-xl flex items-center gap-2 transition-all duration-200 active:scale-95 shadow-md tracking-wide cursor-pointer"
